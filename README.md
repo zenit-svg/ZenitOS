@@ -41,3 +41,9 @@ cat bootloader.bin kernel.bin > os_image.bin
 ```
 ```
 qemu-system-x86_64 -drive format=raw,file=os_image.bin
+```
+
+# Contribuir
+Si te interesa contribuir al desarrollo de KernixOS, sigue estos pasos: Haz un fork del repositorio.Crea una nueva rama para tu característica o corrección de errores. Realiza tus cambios y haz commit.Envía un pull request con una descripción clara de tus cambios. 
+# Licencia 
+Este proyecto está bajo la Licencia GPL. Consulta el archivo LICENSE para obtener más detalles.Nota: Este proyecto está en fase de desarrollo y es principalmente para fines educativos. No está destinado para su uso en producción.
