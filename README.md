@@ -1,6 +1,18 @@
-# KernixOS
 
-**KernixOS** es un sistema operativo unix-like básico y experimental diseñado para aprender sobre la programación de sistemas y el desarrollo de sistemas operativos. Este proyecto es un punto de partida ideal para explorar los conceptos fundamentales en la creación de un sistema operativo.
+ .----------------.  .----------------.  .----------------.  .-----------------. .----------------.  .----------------. 
+| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
+| |  ___  ____   | || |  _________   | || |  _______     | || | ____  _____  | || |     _____    | || |  ____  ____  | |
+| | |_  ||_  _|  | || | |_   ___  |  | || | |_   __ \    | || ||_   \|_   _| | || |    |_   _|   | || | |_  _||_  _| | |
+| |   | |_/ /    | || |   | |_  \_|  | || |   | |__) |   | || |  |   \ | |   | || |      | |     | || |   \ \  / /   | |
+| |   |  __'.    | || |   |  _|  _   | || |   |  __ /    | || |  | |\ \| |   | || |      | |     | || |    > `' <    | |
+| |  _| |  \ \_  | || |  _| |___/ |  | || |  _| |  \ \_  | || | _| |_\   |_  | || |     _| |_    | || |  _/ /'`\ \_  | |
+| | |____||____| | || | |_________|  | || | |____| |___| | || ||_____|\____| | || |    |_____|   | || | |____||____| | |
+| |              | || |              | || |              | || |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
+ 
+# KernixOS
+es un sistema operativo unix-like básico y experimental diseñado para aprender sobre la programación de sistemas y el desarrollo de sistemas operativos. Este proyecto es un punto de partida ideal para explorar los conceptos fundamentales en la creación de un sistema operativo.
 
 ## Características
 
