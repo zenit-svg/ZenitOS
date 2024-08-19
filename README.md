@@ -29,3 +29,15 @@
    - Usa `nasm` para compilar `bootloader.asm`.
    ```bash
    nasm -f bin bootloader.asm -o bootloader.bin
+  ``` 
+gcc -ffreestanding -c kernel.c -o kernel.o
+gcc -ffreestanding -c scheduler.c -o scheduler.o
+gcc -ffreestanding -c filesystem.c -o filesystem.o
+gcc -ffreestanding -c init.c -o init.o
+ld -o kernel.bin -Ttext 0x1000 kernel.o scheduler.o filesystem.o init.o --oformat binary
+```
+```
+cat bootloader.bin kernel.bin > os_image.bin
+```
+```
+qemu-system-x86_64 -drive format=raw,file=os_image.bin
