@@ -14,8 +14,8 @@ qemu-system-i386 -cdrom kernixOS.iso
 
 inician como si fuera un sistema operativo normal.
 
-# Compilar
-Para compilar el Kernel, solo ejecute:
+# Construir 
+Para construir el Kernel, solo ejecute:
 ```
 make
 ```
