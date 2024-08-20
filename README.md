@@ -1,3 +1,5 @@
+![20240819_190229](https://github.com/user-attachments/assets/4f6e630d-a8b0-465d-ae25-7a858bf2a280)
+
 # KernixOS
 es un sistema operativo unix-like básico y experimental diseñado para aprender sobre la programación de sistemas y el desarrollo de sistemas operativos. Este proyecto es un punto de partida ideal para explorar los conceptos fundamentales en la creación de un sistema operativo.
 
