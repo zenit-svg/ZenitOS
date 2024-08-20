@@ -8,7 +8,7 @@ Puedes descargar la iso (archivo ISO) cuando inicie, puedes ejecutar: doom & lua
 
 para correr kernixOS en qemu, ejecuta:
 ```
-
+qemu-system-i386 -cdrom kernixOS.iso
 ```
 
 # Compilar
