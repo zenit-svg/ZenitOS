@@ -12,6 +12,8 @@ make
 Esto compilara solo el kernel (kernel.bin).
 
 La compilación de binarios del espacio de usuario se documentará después.
+por ahora no lo hagas porque no e terminado se subir los archivos :)
+
 # Contribuir
 Si te interesa contribuir al desarrollo de KernixOS, sigue estos pasos: Haz un fork del repositorio.Crea una nueva rama para tu característica o corrección de errores. Realiza tus cambios y haz commit.Envía un pull request con una descripción clara de tus cambios. 
 # Licencia 
