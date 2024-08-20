@@ -10,6 +10,9 @@ para correr kernixOS en qemu, ejecuta:
 ```
 qemu-system-i386 -cdrom kernixOS.iso
 ```
+# VirtualBox & Vmware 
+
+inician como si fuera un sistema operativo normal.
 
 # Compilar
 Para compilar el Kernel, solo ejecute:
@@ -29,3 +32,4 @@ Este proyecto está bajo la Licencia GPL. Consulta el archivo LICENSE para obten
 
 # fotos
 ![20240819_220811](https://github.com/user-attachments/assets/b93af09d-7060-43b7-82da-d4372ca44a16)
+![20240819_223134](https://github.com/user-attachments/assets/fb338f5d-12e5-45cf-beb6-7cce6d2f29d8)
