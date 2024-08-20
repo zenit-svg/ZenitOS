@@ -1,35 +1,51 @@
-[BITS 16]
-[ORG 0x7C00]
+MBOOT_PAGE_ALIGN    equ 1<<0
+MBOOT_MEM_INFO      equ 1<<1
+MBOOT_USE_GFX       equ 1<<2
+MBOOT_HEADER_MAGIC  equ 0x1BADB002
+MBOOT_HEADER_FLAGS  equ MBOOT_PAGE_ALIGN | MBOOT_MEM_INFO | MBOOT_USE_GFX
+MBOOT_CHECKSUM      equ -(MBOOT_HEADER_MAGIC + MBOOT_HEADER_FLAGS)
 
-mov ah, 0x0E
-mov al, 'K'
-int 0x10
 
-mov ah, 0x0E
-mov al, 'E'
-int 0x10
+[BITS 32]
 
-mov ah, 0x0E
-mov al, 'R'
-int 0x10
 
-mov ah, 0x0E
-mov al, 'N'
-int 0x10
+section .multiboot
+align 4
+    dd  MBOOT_HEADER_MAGIC
+    dd  MBOOT_HEADER_FLAGS
+    dd  MBOOT_CHECKSUM
+    dd 0x00000000 ; header_addr
+    dd 0x00000000 ; load_addr
+    dd 0x00000000 ; load_end_addr
+    dd 0x00000000 ; bss_end_addr
+    dd 0x00000000 ; entry_addr
+    ; Graphics requests
+    dd 0x00000000 ; 0 = linear graphics
+    dd 1024
+    dd 768
+    dd 32
 
-mov ah, 0x0E
-mov al, 'I'
-int 0x10
+section .bss
+align 16
+stack_bottom:
+resb 16384 ; 16 KiB
+stack_top:
 
-mov ah, 0x0E
-mov al, 'X'
-int 0x10
+[GLOBAL _start]  ; this is the entry point. we tell linker script to set start address of kernel elf file.
+[EXTERN kmain]
 
-mov ah, 0x00
-mov al, 0x00
-int 0x13 ; Load kernel
+section .text
 
-jmp 0x1000:0x0000 ; Jump to kernel
+_start:
+    mov esp, stack_top
 
-times 510 - ($ - $$) db 0
-dw 0xAA55
+    ; push multiboot parameter to kmain()
+    push ebx
+
+    ; ...and run!
+    cli
+    call kmain
+
+    ;never reach here
+    cli
+    hlt
