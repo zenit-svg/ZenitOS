@@ -1,4 +1,6 @@
-# KernixOS
+# Zenit'OS
+![20240820_215259](https://github.com/user-attachments/assets/6e745cfb-7acc-4d4c-9bae-7212377a80ca)
+
 es un sistema operativo x86-32bit unix-like básico y experimental diseñado para aprender sobre la programación de sistemas y el desarrollo de sistemas operativos. Este proyecto es un punto de partida ideal para explorar los conceptos fundamentales en la creación de un sistema operativo.
 # Ejecutar 
 Puedes descargar la iso [Archivo Iso](https://github.com/CipherGo/KernixOS/releases/download/kernixOS/kernixOS.iso) cuando inicie, puedes ejecutar: doom & lua, en una ventana de terminal.
