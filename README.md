@@ -1,9 +1,6 @@
-![20240819_190229](https://github.com/user-attachments/assets/4f6e630d-a8b0-465d-ae25-7a858bf2a280)
-
 # KernixOS
 es un sistema operativo x86-32bit unix-like básico y experimental diseñado para aprender sobre la programación de sistemas y el desarrollo de sistemas operativos. Este proyecto es un punto de partida ideal para explorar los conceptos fundamentales en la creación de un sistema operativo.
 # Ejecutar 
-
 Puedes descargar la iso [Archivo Iso](https://github.com/CipherGo/KernixOS/releases/download/kernixOS/kernixOS.iso) cuando inicie, puedes ejecutar: doom & lua, en una ventana de terminal.
 
 para correr kernixOS en qemu, ejecuta:
@@ -11,7 +8,6 @@ para correr kernixOS en qemu, ejecuta:
 qemu-system-i386 -cdrom kernixOS.iso
 ```
 # VirtualBox & Vmware 
-
 inician como si fuera un sistema operativo normal.
 
 # Construir 
